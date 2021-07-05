@@ -1,0 +1,47 @@
+/*
+  Created at: 07/05/2021 19:43:32 Monday
+  Modified at: 07/05/2021 08:15:52 PM Monday
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+.ROOT {
+  display: flex;
+  flex-direction: column;
+  margin: 20em;
+  font-family: sans-serif;
+}
+.ROOT > * {
+  padding: .5em;
+  margin: .5em;
+  font-size: 1em;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  border: .1em solid hsl(0, 0%, 0%);
+  padding: .5em;
+  text-align: center;
+}
+.log > span {
+  color: grey;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+.log #log div span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.log #log div span:nth-child(2) {
+  color: hsl(var(--i), 100%, 50%);
+}
