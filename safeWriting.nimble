@@ -16,4 +16,4 @@ requires "nim >= 1.5.1"
 requires "gm_api"
 
 task buildRelease, "Build release version":
-  exec "nimble -d:release build"
+  exec "nimble -d:danger build"
