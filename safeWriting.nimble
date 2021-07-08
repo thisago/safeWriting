@@ -15,5 +15,9 @@ bin = @["safeWriting"]
 requires "nim >= 1.5.1"
 requires "gm_api"
 
+import ./minify
+
 task buildRelease, "Build release version":
   exec "nimble -d:danger build"
+  const output = "build/safeWriting.js"
+  writeFile output, minify(output)
