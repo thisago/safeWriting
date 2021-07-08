@@ -1,6 +1,6 @@
 #[
   Created at: 07/05/2021 18:45:00 Monday
-  Modified at: 07/08/2021 02:59:12 PM Thursday
+  Modified at: 07/08/2021 03:18:53 PM Thursday
 ]#
 
 ##[
@@ -12,8 +12,7 @@
 import std/[jsffi, dom]
 from std/strutils import join
 
-import jsconsole
-import ./safeWriting
+import ./safeWriting/defs
 
 when isMainModule:
   main()

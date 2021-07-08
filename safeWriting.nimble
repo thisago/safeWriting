@@ -19,5 +19,5 @@ import ./minify
 
 task buildRelease, "Build release version":
   exec "nimble -d:danger build"
-  const output = "build/safeWriting.js"
-  writeFile output, minify(output)
+  const output = "build/safeWriting.user.js"
+  writeFile output, minify("build/safeWriting.js")

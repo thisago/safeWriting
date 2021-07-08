@@ -1,6 +1,6 @@
 #[
   Created at: 07/08/2021 13:03:35 Thursday
-  Modified at: 07/08/2021 02:48:16 PM Thursday
+  Modified at: 07/08/2021 03:19:22 PM Thursday
 ]#
 
 ##[
@@ -30,8 +30,6 @@ const inputElements* = [
   "textarea",
   "[contenteditable=true]"
 ]
-static:
-  echo inputElements
 const inputTriggerEvents* = [
   "focus",
   "click",
