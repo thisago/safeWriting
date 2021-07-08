@@ -1,6 +1,6 @@
 /*
   Created at: 07/05/2021 19:43:32 Monday
-  Modified at: 07/05/2021 08:15:52 PM Monday
+  Modified at: 07/08/2021 04:12:21 PM Thursday
 */
 
 * {
@@ -20,16 +20,19 @@ body {
   font-family: sans-serif;
 }
 .ROOT > * {
-  padding: .5em;
-  margin: .5em;
+  margin: 0.5em;
+}
+.ROOT > input,
+.ROOT > textarea {
+  padding: 0.5em;
   font-size: 1em;
 }
 
 .log {
   display: flex;
   flex-direction: column;
-  border: .1em solid hsl(0, 0%, 0%);
-  padding: .5em;
+  border: 0.1em solid hsl(0, 0%, 0%);
+  padding: 0.5em;
   text-align: center;
 }
 .log > span {
@@ -42,6 +45,6 @@ body {
   font-weight: bold;
   font-size: 1.1em;
 }
-.log #log div span:nth-child(2) {
+.log #log div span {
   color: hsl(var(--i), 100%, 50%);
 }

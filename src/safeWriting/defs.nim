@@ -1,6 +1,6 @@
 #[
   Created at: 07/08/2021 13:03:35 Thursday
-  Modified at: 07/08/2021 03:19:22 PM Thursday
+  Modified at: 07/08/2021 03:56:54 PM Thursday
 ]#
 
 ##[
@@ -26,11 +26,12 @@ const inputElements* = [
     ":not([type=submit])",
     ":not([type=time])",
     ":not([type=week])",
+    ":not([disabled])",
+    ":not([readonly])",
   ].join(""),
-  "textarea",
+  # "textarea", Issue #1
   "[contenteditable=true]"
 ]
 const inputTriggerEvents* = [
-  "focus",
   "click",
 ]

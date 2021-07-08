@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.2.0"
 author        = "Thiago Navarro"
 description   = "Write in websites without being tracked every keystroke"
 license       = "MIT"
@@ -21,3 +21,4 @@ task buildRelease, "Build release version":
   exec "nimble -d:danger build"
   const output = "build/safeWriting.user.js"
   writeFile output, minify("build/safeWriting.js")
+  # cpFile "build/safeWriting.js", output

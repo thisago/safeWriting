@@ -1,13 +1,11 @@
 /*
   Created at: 07/05/2021 19:28:00 Monday
-  Modified at: 07/05/2021 08:10:28 PM Monday
+  Modified at: 07/08/2021 04:14:15 PM Thursday
 */
 
 const maxLogSize = 20
 
-const input = document.getElementById("text"),
-  textarea = document.getElementById("txtArea"),
-  log = document.getElementById("log")
+const log = document.getElementById("log")
 
 /**
  * Binds the key press listener on element
@@ -32,7 +30,7 @@ function bindListener(el) {
       pressedTime = Date.now() - lastTime,
       text = document.createElement("div")
 
-    text.innerHTML = `Key '<span>${key}</span>' was pressed for <span style="--i:${pressedTime}">${pressedTime}ms</span>`
+    text.innerHTML = `Key '<span style="--i:${key.charCodeAt(0) * 30}">${key}</span>' was pressed for <span style="--i:${pressedTime}">${pressedTime}ms</span>`
 
     log.append(text)
 
