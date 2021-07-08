@@ -1,6 +1,6 @@
 #[
   Created at: 07/08/2021 14:01:57 Thursday
-  Modified at: 07/08/2021 02:10:11 PM Thursday
+  Modified at: 07/08/2021 03:06:52 PM Thursday
 ]#
 
 ##[
@@ -20,6 +20,5 @@ const userscriptHeader* = genMetadataBlock(
   author = "Thiago Navarro",
   version = "0.1.0",
   runAt = GmRunAt.docIdle,
-  downloadUrl = "file:///data/os/dev/nim/browser/safeWriting/build/safeWriting.js",
   description = "See the original code in: http://gitea.com/thisago/safeWriting"
 )
