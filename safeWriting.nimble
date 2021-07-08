@@ -2,7 +2,7 @@
 
 version       = "0.1.0"
 author        = "Thiago Navarro"
-description   = "Write in inputs without being tracked every keystroke"
+description   = "Write in websites without being tracked every keystroke"
 license       = "MIT"
 srcDir        = "src"
 binDir = "build"
