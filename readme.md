@@ -1,6 +1,6 @@
 <!--
   Created at: 07/08/2021 15:04:13 Thursday
-  Modified at: 07/08/2021 03:24:42 PM Thursday
+  Modified at: 07/08/2021 09:28:35 PM Thursday
 -->
 
 # safeWriting
@@ -16,3 +16,7 @@ Just click or focus on a typing area.
 1. Install a userscript manager like Violentmonkey
 2. Open [build](https://gitea.com/thisago/safeWriting/raw/branch/master/build/safeWriting.user.js) on your browser
 3. Confirm installation
+
+## License
+
+MIT
