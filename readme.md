@@ -1,6 +1,6 @@
 <!--
   Created at: 07/08/2021 15:04:13 Thursday
-  Modified at: 07/08/2021 09:28:35 PM Thursday
+  Modified at: 08/05/2021 01:39:37 PM Thursday
 -->
 
 # safeWriting
@@ -9,7 +9,7 @@ Write in websites without being tracked every keystroke
 
 ## Usage
 
-Just click or focus on a typing area.
+Just click on a typing area.
 
 ## Installation
 
