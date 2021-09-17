@@ -1,11 +1,10 @@
 #[
   Created at: 07/05/2021 18:45:00 Monday
-  Modified at: 07/08/2021 05:20:07 PM Thursday
-]#
+  Modified at: 09/17/2021 09:32:51 PM Friday
 
-##[
-  safe Write
-]##
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
 {.experimental: "codeReordering".}
 
@@ -25,7 +24,6 @@ when isMainModule:
 
 proc blur*(el: Node) {.importcpp.}
 proc addEventListener[T](et: EventTarget; ev: cstring; cb: proc (ev: Event): T) {.importcpp.}
-
 
 proc main {.async.} =
   let
@@ -52,27 +50,27 @@ proc main {.async.} =
 
   GM.registerMenuCommand(
     (if historyEnabled: "Disable" else: "Enable") & " History",
-    (proc() =
+    proc () =
       discard GM.setValue("history_enabled", if historyEnabled: "0" else: "1")
       window.alert "Success! Please reload the page"
-    ),
+    ,
     "h"
   )
   GM.registerMenuCommand(
-    fmt"Change history command ({historyCommand})",
-    (proc() =
+    cstring fmt"Change history command ({historyCommand})",
+    proc () =
       let text = window.prompt("History command", "")
       if not text.isNull and text != "":
         discard GM.setValue("history_command", text)
         window.alert "Command successfully changed. Reload the page to use"
-    ),
+    ,
     "c"
   )
   GM.registerMenuCommand(
-    fmt"Clean saved history",
-    (proc() =
+    cstring "Clean saved history",
+    proc () =
       discard GM.setValue("history_value", "")
       window.alert "Successfully cleaned!"
-    ),
+    ,
     "c"
   )

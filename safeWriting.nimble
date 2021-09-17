@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.2.0"
+version       = "0.3.0"
 author        = "Thiago Navarro"
 description   = "Write in websites without being tracked every keystroke"
 license       = "MIT"
