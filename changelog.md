@@ -1,11 +1,11 @@
 <!--
   Created at: 07/08/2021 15:47:38 Thursday
-  Modified at: 09/17/2021 10:47:13 PM Friday
+  Modified at: 09/17/2021 10:48:26 PM Friday
 -->
 
 # Changelog
 
-## Version 0.3.0 (!time)
+## Version 0.3.0 (09/17/2021 22:48:26 Friday)
 
 - changed event from `click` to `dblclick`
 - Added description
