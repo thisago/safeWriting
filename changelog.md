@@ -1,6 +1,6 @@
 <!--
   Created at: 07/08/2021 15:47:38 Thursday
-  Modified at: 09/17/2021 10:48:26 PM Friday
+  Modified at: 09/17/2021 10:48:49 PM Friday
 -->
 
 # Changelog
@@ -13,7 +13,7 @@
 
 ### Allowed
 
-textarea
+- textarea
 - input
   - type=time
   - type=week
